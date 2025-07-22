@@ -1,7 +1,6 @@
 version: "3.2"
 
 services:
-  # GLPI Container
   glpi:
     image: diouxx/glpi
     container_name: glpi
@@ -14,9 +13,6 @@ services:
       - /etc/localtime:/etc/localtime:ro
     environment:
       - TIMEZONE=Europe/Brussels
-      - DB_HOST=${DB_HOST}
-      - DB_NAME=${DB_NAME}
-      - DB_USER=${DB_USER}
-      - DB_PASS=${DB_PASS}
-      - DB_PORT=${DB_PORT}
+    env_file:
+      - .env  # Esta línea carga las variables de entorno desde el archivo .env
     restart: always
