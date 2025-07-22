@@ -1,0 +1,22 @@
+version: "3.2"
+
+services:
+  # GLPI Container
+  glpi:
+    image: diouxx/glpi
+    container_name: glpi
+    hostname: glpi
+    ports:
+      - "80:80"
+    volumes:
+      - ./glpi_data:/var/www/html/glpi
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - TIMEZONE=Europe/Brussels
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - DB_PORT=${DB_PORT}
+    restart: always
