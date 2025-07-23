@@ -1,0 +1,48 @@
+[2025-07-08 21:39:57] glpi.WARNING:   *** Warning: session_start(): Session data file is not created by your uid at Session.php line 255
+  Backtrace :
+  ./src/Session.php:255                              
+  .../Listener/PostBootListener/SessionStart.php:134 Session::start()
+  .../event-dispatcher/Debug/WrappedListener.php:116 Glpi\Kernel\Listener\PostBootListener\SessionStart->onPostBoot()
+  ...ymfony/event-dispatcher/EventDispatcher.php:220 Symfony\Component\EventDispatcher\Debug\WrappedListener->__invoke()
+  ...symfony/event-dispatcher/EventDispatcher.php:56 Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+  ...spatcher/Debug/TraceableEventDispatcher.php:139 Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+  ./src/Glpi/Kernel/Kernel.php:144                   Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher->dispatch()
+  ./vendor/symfony/http-kernel/Kernel.php:192        Glpi\Kernel\Kernel->boot()
+  ./public/index.php:70                              Symfony\Component\HttpKernel\Kernel->handle()
+
+[2025-07-08 21:39:57] glpi.WARNING:   *** Warning: session_start(): Failed to read session data: files (path: ./files/_sessions) at Session.php line 255
+  Backtrace :
+  ./src/Session.php:255                              
+  .../Listener/PostBootListener/SessionStart.php:134 Session::start()
+  .../event-dispatcher/Debug/WrappedListener.php:116 Glpi\Kernel\Listener\PostBootListener\SessionStart->onPostBoot()
+  ...ymfony/event-dispatcher/EventDispatcher.php:220 Symfony\Component\EventDispatcher\Debug\WrappedListener->__invoke()
+  ...symfony/event-dispatcher/EventDispatcher.php:56 Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+  ...spatcher/Debug/TraceableEventDispatcher.php:139 Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+  ./src/Glpi/Kernel/Kernel.php:144                   Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher->dispatch()
+  ./vendor/symfony/http-kernel/Kernel.php:192        Glpi\Kernel\Kernel->boot()
+  ./public/index.php:70                              Symfony\Component\HttpKernel\Kernel->handle()
+
+[2025-07-08 21:41:03] glpi.WARNING:   *** Warning: session_start(): Session data file is not created by your uid at Session.php line 255
+  Backtrace :
+  ./src/Session.php:255                              
+  .../Listener/PostBootListener/SessionStart.php:134 Session::start()
+  .../event-dispatcher/Debug/WrappedListener.php:116 Glpi\Kernel\Listener\PostBootListener\SessionStart->onPostBoot()
+  ...ymfony/event-dispatcher/EventDispatcher.php:220 Symfony\Component\EventDispatcher\Debug\WrappedListener->__invoke()
+  ...symfony/event-dispatcher/EventDispatcher.php:56 Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+  ...spatcher/Debug/TraceableEventDispatcher.php:139 Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+  ./src/Glpi/Kernel/Kernel.php:144                   Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher->dispatch()
+  ./vendor/symfony/http-kernel/Kernel.php:192        Glpi\Kernel\Kernel->boot()
+  ./public/index.php:70                              Symfony\Component\HttpKernel\Kernel->handle()
+
+[2025-07-08 21:41:03] glpi.WARNING:   *** Warning: session_start(): Failed to read session data: files (path: ./files/_sessions) at Session.php line 255
+  Backtrace :
+  ./src/Session.php:255                              
+  .../Listener/PostBootListener/SessionStart.php:134 Session::start()
+  .../event-dispatcher/Debug/WrappedListener.php:116 Glpi\Kernel\Listener\PostBootListener\SessionStart->onPostBoot()
+  ...ymfony/event-dispatcher/EventDispatcher.php:220 Symfony\Component\EventDispatcher\Debug\WrappedListener->__invoke()
+  ...symfony/event-dispatcher/EventDispatcher.php:56 Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+  ...spatcher/Debug/TraceableEventDispatcher.php:139 Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+  ./src/Glpi/Kernel/Kernel.php:144                   Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher->dispatch()
+  ./vendor/symfony/http-kernel/Kernel.php:192        Glpi\Kernel\Kernel->boot()
+  ./public/index.php:70                              Symfony\Component\HttpKernel\Kernel->handle()
+
